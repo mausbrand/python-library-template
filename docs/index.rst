@@ -21,7 +21,7 @@ Have a look at our starting code from the index.rst ::
        :caption: Example
 
        *
-       Demo Demo Demo <demo/*>
+       demo/*
 
 This directive will tell sphinx to generate a table of contents automatically.
 Right after the toctree directive we are passing three options:
@@ -38,7 +38,7 @@ Right after the toctree directive we are passing three options:
    :caption: Example
 
    *
-   Demo Demo Demo <demo/*>
+   demo/*
 
 Indices and tables
 ==================
