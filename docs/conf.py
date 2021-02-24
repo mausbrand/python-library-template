@@ -30,7 +30,7 @@ extensions = [
     'autoapi.extension'
 ]
 
-autoapi_dirs = ['../flare']
+autoapi_dirs = ['../demo']
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['_templates']
