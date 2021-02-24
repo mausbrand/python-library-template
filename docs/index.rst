@@ -1,35 +1,34 @@
-Welcome to autodoc-example's documentation!
-===========================================
+Welcome to the example-doc documentation!
+=========================================
 
-This project servers as an example project to demostrate
-how to use the *sphinx* documentation generator for Python.
+This project serves as an example project to demonstrate
+how to use the *sphinx* documentation generator for Python and provide
+a template to make starting out easier.
 
-Simple use
-----------
-This is a section within a *sphinx* .rst file.
+How to prepare the template and get started
+-------------------------------------------
+If you do not know how to write .rst, you should have a look at a tutorial or a reference first:
+`Restructured Text Reference: <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 
-You can also include code snippets::
+How to set up your Table of Contents
+-------------------------------------
 
-    import pkg
-    x = pkg.Pkg()
-    x.foo()
+Have a look at our starting code from the index.rst ::
 
-Another Section
-----------------
-Here is another section. Now I'll include a list.
+    .. toctree::
+       :maxdepth: 2
+       :glob:
+       :caption: Example
 
-- one fish
-- two fish
-- red fish
-- blue fish
+       *
 
-Link Example
--------------
-
-Here is an example of a link in reStructuredText `GitHub <https://github.com>`_.
-
-Reference Example
-------------------
+This directive will tell sphinx to generate a table of contents automatically.
+Right after the toctree directive we are passing three options:
+* :maxdepth: This restricts the generator to only dive into the tree by the number of levels you configure here.
+* :glob: This is an important option to set, in order to make the generator recursively pick up all .rst files using wildcards
+* :caption: This sets a headline for the entire table of contents. It should probably be your project name.
+* After setting the options you must leave a blank line before configuring the paths to your .rst files.
+In our case we use an asterisk, but you can specify exact paths here as well.
 
 For more information about how to use this library, see the :ref:`api`.
 
