@@ -36,6 +36,7 @@ Right after the toctree directive we are passing three options:
    :glob:
    :caption: Example
 
+   demo/demo
    *
 
 Indices and tables
