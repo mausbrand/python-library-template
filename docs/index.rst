@@ -31,8 +31,6 @@ Right after the toctree directive we are passing three options:
 * After setting the options you must leave a blank line before configuring the paths to your .rst files.
   In our case we use an asterisk, but you can specify exact paths here as well.
 
-For more information about how to use this library, see the :ref:`api`.
-
 .. toctree::
    :maxdepth: 2
    :glob:
