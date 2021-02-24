@@ -36,7 +36,7 @@ For more information about how to use this library, see the :ref:`api`.
 .. toctree::
    :maxdepth: 2
    :glob:
-   :caption: Flare
+   :caption: Example
 
    *
 
