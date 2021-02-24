@@ -16,7 +16,7 @@ How to set up your Table of Contents
 Have a look at our starting code from the index.rst ::
 
     .. toctree::
-       :maxdepth: 2
+       :maxdepth: 1
        :glob:
        :caption: Example
 
@@ -33,7 +33,7 @@ Right after the toctree directive we are passing three options:
   In our case we use an asterisk, but you can specify exact paths here as well.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
    :caption: Example
 
